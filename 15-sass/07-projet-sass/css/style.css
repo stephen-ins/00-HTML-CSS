@@ -104,7 +104,7 @@ body {
   flex-direction: row;
   justify-content: false;
   align-items: false;
-  height: 250px;
+  height: 240px;
   background-color: rgb(221, 172, 111);
 }
 .footer .footer__content {
