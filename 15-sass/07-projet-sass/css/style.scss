@@ -1,0 +1,241 @@
+@import url(reset.css);
+
+$max-content-width: 80%;
+$max-logo-width: 100px;
+
+$main-color: rgb(221, 172, 111);
+$white-color: #fff;
+$text-primary-color: #000000;
+$background-nav: #ddd;
+$background-color-nav-link: #db8206;
+
+$spacing-xs: 0.5rem;
+$spacing-sm: 0.75rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+
+$font-size-xs: 0.5rem;
+$font-size-sm: 0.75rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.5rem;
+$font-size-xl: 2rem;
+
+// operateur definition == permet de tester l'egalité sur les valeurs, != permet de tester la difference des valeurs, < permet de tester si une valeur est strictement inferieur à une autre, > permet de tester si une valeur est strictement superieur à une autre, <= permet de tester si une valeur est strictement inferieur ou egale à une autre, >= permet de tester si une valeur est strictement superieure ou egale à une autre.
+
+@mixin display(
+  $display,
+  $column,
+  $direction,
+  $justifycontent,
+  $alignitems,
+  $gap
+) {
+  @if ($display == grid) {
+    display: $display;
+    grid-template-columns: $column;
+  } @else if($display == flex) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justifycontent;
+    align-items: $alignitems;
+  }
+  @if ($gap) {
+    gap: $gap;
+  }
+}
+
+@function calculate-width($col) {
+  @return 100% / $col;
+}
+
+%link {
+  text-decoration: none;
+  color: $text-primary-color;
+  padding: $spacing-sm;
+}
+%title {
+  font-size: $font-size-xl;
+  letter-spacing: $spacing-xs;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: $max-content-width;
+  margin: 0 auto;
+}
+
+.header {
+  @include display(flex, false, row, space-between, center, false);
+  background-color: $main-color;
+  padding: $spacing-md;
+  .header__logo {
+    width: $max-logo-width;
+  }
+  .title__h1 {
+    @extend %title;
+    color: $white-color;
+  }
+}
+.nav {
+  background-color: $background-nav;
+}
+
+.nav__list {
+  @include display(flex, false, row, space-around, center, false);
+  padding: $spacing-md;
+  .nav__link {
+    @extend %link;
+    border-radius: 0.25rem;
+    &:hover {
+      background-color: $background-color-nav-link;
+      color: $white-color;
+    }
+  }
+}
+
+.main {
+  padding: $spacing-md;
+}
+
+.title__h2 {
+  @extend %title;
+  text-align: center;
+}
+
+.presentation__p {
+  margin: $spacing-lg 0;
+  text-align: center;
+}
+.actuality {
+  margin-top: $spacing-lg;
+  @include display(grid, repeat(3, 1fr), false, false, false, $spacing-md);
+}
+
+.actuality__card {
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 3px 9px 17px -6px rgba(0, 0, 0, 0.78);
+  box-shadow: 3px 9px 17px -6px rgba(0, 0, 0, 0.78);
+  .actuality__picture {
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+}
+.actuality__content {
+  @include display(flex, false, column, center, flex-start, false);
+  padding: $spacing-md;
+  .actuality__title {
+    font-size: $font-size-lg;
+    margin-bottom: $spacing-sm;
+  }
+  .actuality__link {
+    @extend %link;
+    color: $white-color;
+    background-color: $text-primary-color;
+  }
+}
+
+.footer {
+  @include display(flex, false, row, false, false, false);
+  height: 250px;
+  background-color: $main-color;
+  .footer__content {
+    width: calculate-width(3);
+    padding: $spacing-md;
+  }
+  .footer__logo {
+    width: 100px;
+  }
+}
+.footer__informations {
+  @include display(flex, false, column, space-between, flex-start, false);
+}
+
+.footer__reseaux {
+  @include display(flex, false, column, space-evenly, center, false);
+  .icone {
+    margin: $spacing-lg;
+    color: $text-primary-color;
+    font-size: $font-size-lg;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.25rem;
+    &:hover {
+      background-color: $background-color-nav-link;
+      color: $white-color;
+    }
+  }
+}
+
+.footer__link {
+  @include display(flex, false, column, space-evenly, flex-end, false);
+  color: $text-primary-color;
+  .footer__infos {
+    text-decoration: none;
+    color: $text-primary-color;
+    border-radius: 0.25rem;
+    &:hover {
+      background-color: $background-color-nav-link;
+      color: $white-color;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    font-size: $font-size-sm;
+  }
+  .header {
+    height: auto;
+  }
+  // .header__logo {
+  //   width: 40px;
+  //   height: 40px;
+  // }
+  .title__h1 {
+    text-align: end;
+  }
+  .title__h1,
+  .title__h2 {
+    font-size: $font-size-md;
+  }
+
+  .footer {
+    width: 100%;
+    height: 100%;
+    font-size: $font-size-sm;
+    flex-direction: column;
+    padding: $spacing-xs;
+    align-items: center;
+    .footer__logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    .footer__informations {
+      width: 100%;
+      @include display(flex, false, row, space-around, center, false);
+    }
+    .footer__reseaux {
+      width: 100%;
+      @include display(flex, false, row, space-around, center, false);
+    }
+    .footer__link {
+      width: 100%;
+      text-align: end;
+      @include display(flex, false, column, space-around, center, false);
+    }
+  }
+}

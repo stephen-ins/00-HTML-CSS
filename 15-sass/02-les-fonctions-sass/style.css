@@ -1,0 +1,21 @@
+.title__h1 {
+  color: #00a179;
+}
+
+.paragraph {
+  background-color: rgb(67, 142, 216);
+}
+
+.block {
+  width: 200px;
+  height: 200px;
+  background-color: #003150;
+  margin-bottom: 14px;
+  margin-bottom: 20px;
+}
+
+.block2 {
+  width: 200px;
+  height: 200px;
+  background-color: #0071b6;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,48 @@
+$main-color: #005183;
+$max-content-width: 1440;
+
+// darken une fonction predefini pour rendre une couleur plus foncée d'un certain montant exprimé en pourcentage
+$dark-main-color: darken(#005183, 10%);
+$light-main-color: lighten(#005183, 10%);
+
+// r color est une fonction predefini qui chiffre aleatoirement entre un minimum de 1 et un maximum XX.
+$random-color: rgb(random(255), random(255), random(255));
+
+// margin-bottom: fois2(10)+px;
+
+// @function permet de declarer une fonction en scss. $nb est une variable de reception que nous definissions elle receptionne un argument. une fonction retourne toujours quelque chose, @return est une instruction permettant de retourner le resultat de la fonction. lorsque nous travaillons dans une fonction nous sommes dans un espace local, tout le reste à l'exterieur de la fonction nous sommes dans un espace global. Toutes les variables declarees dans une fonction, sont accessible uniquement dans la fonction.
+// 10
+@function fois2($nb) {
+  // 10*2=20
+  $resultat: $nb * 2;
+  //   return 20
+  @return $resultat;
+}
+
+// adjust color est une fonction predefini dans le code sass, qui permet d'ajuster une couleur de base en modifiant certains de ces composants,
+$secondary-color: adjust-color(#005183, $green: 80, $blue: -10);
+
+.title__h1 {
+  color: $secondary-color;
+}
+
+.paragraph {
+  background-color: $random-color;
+}
+
+// round() est une fonction predefinie qui permet d'arrondir un nombre decimale à l'intier le plus proche.
+.block {
+  width: 200px;
+  height: 200px;
+  background-color: $dark-main-color;
+
+  //   1440 / 100 = 14.4
+  margin-bottom: round($max-content-width/100) + px;
+  //   résultat ici 14px
+  margin-bottom: fois2(10) + px;
+}
+.block2 {
+  width: 200px;
+  height: 200px;
+  background-color: $light-main-color;
+}

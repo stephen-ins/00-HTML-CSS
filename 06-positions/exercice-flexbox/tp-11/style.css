@@ -1,0 +1,70 @@
+@import url(../../../02-Selecteur-heritage/Heritage/reset.css);
+
+
+
+html{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    padding: 50px;
+}
+
+.container{
+    margin:0 100px ;
+    color: aliceblue;
+}
+
+.H{ 
+    background: purple;
+    height: 50px;
+}
+
+.M{
+    background: rgb(223, 219, 6);
+    height: 20px;
+}
+
+.A{
+    background: red;
+    width: 50%;
+    height: 250px;
+}
+
+.B{
+    background: rgb(17, 0, 255);
+    width: 50%;
+    height: 250px;
+
+}
+
+.C{
+    background: rgb(4, 197, 4);
+    width: 50%;
+    height: 250px;
+
+}
+
+.D{
+    background: rgb(183, 0, 255);
+    width: 50%;
+    height: 250px;
+
+}
+
+
+.footer{
+    background: rgb(182, 53, 75);
+    height: 40px;
+}
+
+
+.ABCD{
+   display: flex;
+   flex-wrap: wrap; 
+}
+
+

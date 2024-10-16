@@ -1,0 +1,48 @@
+@import url(../../02-Selecteur-heritage/Heritage/reset.css);
+
+
+html, body{
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.video__background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    background: url(../assets/videoBackground.jpg) no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+.container{
+    font-size: 1.5rem;
+    /* text-align: left; */
+}
+
+.title__h1{
+    font-size: 4rem x-large;
+    justify-content: center;
+    text-decoration: double;
+    letter-spacing: 2cm;
+    text-shadow: 10px;
+    margin-left: 400px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+}
+
+.paragraph, .paragraph1{
+    font-style: italic;
+    margin-left: 400px;
+}
+
+.paragraph1{
+    font: bold;
+}
+
+

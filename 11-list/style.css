@@ -1,0 +1,15 @@
+@import url(../02-Selecteurs-heritage/heritage/reset.css);
+
+html, body{
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container {
+    width: 1000px;
+    margin: 50px auto;
+}
+
+.list__item{
+    list-style-type: disc;
+}

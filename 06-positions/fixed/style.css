@@ -1,0 +1,56 @@
+@import url(../../02-Selecteur-heritage/Heritage/reset.css);
+
+
+
+html, body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+}
+
+.header__nav{
+    background: lightblue;
+    padding: 2rem 0;
+    text-align: center;
+
+    /*
+    La position fixed permet ici de positionner la navigation fixe en haut de page top et right permettent d'aligner
+    */
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    opacity: 85;
+    -webkit-box-shadow: 30px 27px 15px 5px rgba(0,0,0,0.73);
+    box-shadow: 30px 27px 15px 5px rgba(0,0,0,0.73);
+}
+
+.nav__link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: brown;
+    margin-right: 2rem;
+    font-weight: bold;
+}
+
+.main{
+    margin-top: 128px;
+
+}
+
+.main__content{
+    margin: 2rem auto 0 auto;
+    width: 1400px;
+    margin-bottom: 1.5rem;
+}
+
+.main__title{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.main__paragraph{
+    padding: 1rem;
+}
+

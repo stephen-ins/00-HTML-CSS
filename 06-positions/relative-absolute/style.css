@@ -1,0 +1,70 @@
+@import url(../../02-Selecteur-heritage/Heritage/reset.css);
+
+
+.carre__bleu{
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+    background: lightblue;
+    position: relative;
+    /* left: 50px*/
+    /*top/bottom/left/ right*/
+}
+  
+.carre__rouge{
+    width: 100px;
+    height: 100px;
+    background: lightcoral;
+    position: absolute;
+    /*top/bottom/left/ right*/
+    top: -50px;
+    right: -50px;
+    z-index: -1;
+}
+
+/*
+Superposition des différents plan, ici permet de placer le carré rouge en arrière plan derrière le carré bleu.
+*/
+
+.container{
+    width: 225px;
+    margin: 100px auto;
+}
+
+.picture__item{
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.link__picture{
+    position: relative;
+}
+
+.icone{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+
+    /*
+    la fonction calc() permet ici de centrer horizontalement et verticalement l'icone sur l'image
+    on soustrait la moitié de la font-size de l'icone au 50% 
+    */
+
+    top: calc(50% - (50px / 2));
+    left: calc(50% - (50px / 2));
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.link__picture:hover .icone{
+    opacity: 1;
+}
+
+
+/*
+    Position : absolute permet de sortir un élément du flux afin de pouvoir le positionner un peu comme on le veut par rapport à un élément parent qui lui va être en position relative, on va positionner un élément par rapport à un autre.
+    En position absolute, le carré rouge sort du flux et n'est plus un élément type 'block'
+    Si nous mettons un élément en position 'absolute', il faut absolument que son parent soit en position 'relative' , de ce fait, nous allons pouvoir positionner le carré rouge par rapport au carré bleu.
+*/
+

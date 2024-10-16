@@ -1,0 +1,14 @@
+// Une variable ne Sass se déclare toujours avec le signe $
+// Une varible est un espace nommé permettant de conserver une valeur
+$background: #aaaaaa;
+$font-size-h1: 2rem;
+$color-h1: red;
+
+body {
+  background-color: $background;
+}
+
+.title__h1{
+  font-size: $font-size-h1;
+  color: $color-h1;
+}

@@ -1,0 +1,85 @@
+@import url(../../02-Selecteur-heritage/../02-Selecteur-heritage/Heritage/style.css);
+
+html,
+body {
+  font-size: 16px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.container__xl {
+  width: 1440px;
+  margin: 50px auto;
+}
+
+.box {
+  background-color: aqua;
+  border: 2px solid #000000;
+  padding: 10px;
+}
+
+.container1 {
+  /* toujours sur l'élément parent */
+  display: grid;
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: 200px 200px 200px; */
+  grid-template-rows: 100px 150px 200px;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.container2 {
+  /* fr : fraction proportionnelle */
+  /* toujours sur l'élément parent */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  gap: 10px;
+}
+
+.une {
+  /* grid-column-start: 1;
+    grid-column-end: 7; */
+  grid-column: 1/7;
+  /* la colonne une prend la largeur entière des 6 colonnes nous sommes obligés de compter +1 pour couvrir toutes les colonnes */
+}
+
+.deux {
+  grid-column: 1 / 3;
+  /* grid-row-start: 2;
+    grid-row-end: 4; */
+  grid-row: 2 / 4;
+}
+
+.trois {
+  grid-column: 3 / 5;
+}
+
+.quatre {
+  grid-column: 5/7;
+}
+
+.cinq {
+  grid-column: 3/7;
+}
+
+.six {
+  grid-column: 1/5;
+}
+
+.sept {
+  grid-column: 5/7;
+}
+
+.huit {
+  grid-column: 1/7;
+}
+
+.neuf {
+  grid-column: 1/4;
+}
+
+.dix {
+  grid-column: 4/7;
+}

@@ -1,0 +1,38 @@
+@import url(../02-Selecteur-heritage/Heritage/reset.css);
+
+@font-face {
+  font-family: "robotoblack";
+  src: url(fonts/roboto-black-webfont.woff2) format("woff2"),
+    url(fonts/roboto-black-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 2 méthodes pour importer des fonts :
+    - importer via des URL de google fonts
+    - En téléchargeant le fichier .ttf de font sur google fonts, ensuite se rendre sur le site font quirrel https://www.fontsquirrel.com/tools/webfont-generator , uploader le fichier .ttf et créer votre kit.
+    Dans le kit nous trouvons le code CSS ci-dessous ainsi que les formats woff et woff2. Pensez à bien lier les fichiers dans la propriété 'src' (source) de @font-face.
+    */
+
+body {
+  font-family: "robotoblack";
+}
+
+.title_h1 {
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  width: 300px;
+  margin: 20px auto;
+  background: grey;
+  border-radius: 25px;
+  padding: 10px;
+  color: white;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.kanit-black-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}

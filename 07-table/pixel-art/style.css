@@ -1,0 +1,57 @@
+@import url(../../02-Selecteur-heritage/Heritage/reset.css);
+
+body, html{
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.container{
+    width: 1440px;
+    margin: 50px auto;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+
+.table{
+    /* width: 1440px; */
+    /* margin: 50px auto; */
+    /* border: 1px solid black; */
+}
+
+th, td, tr{
+    border: 1px solid black;
+    padding: 20px;
+    font-weight: bold;
+    background-color: #ffffff;
+
+}
+
+
+
+.black{
+    background-color: black;
+    border: 1px solid black;
+
+}
+
+.gray{
+    background-color: gray;
+    border: 1px solid black;
+
+}
+
+.pink{
+    background-color: rgb(255, 124, 146);
+    border: 1px solid black;
+
+}
+
+.white{
+    background-color: white;
+    border: 1px solid black;
+
+    
+}

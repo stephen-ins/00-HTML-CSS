@@ -1,0 +1,22 @@
+header{
+    background: blueviolet;
+    height: 150px;
+}
+
+a{
+    /* Couleur de fond */
+    background: green;
+
+    /* Marge extérieur à droite */
+    margin-right: 10px;
+
+    /* annule le soulignement du lien */
+    text-decoration: none;
+
+    /* Marge intérieur */
+    padding: 10px;
+
+    /* Arrondi des angles */
+    border-radius: 10px;
+}
+

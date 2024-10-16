@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML-CSS / 09-Formulaire</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="title__h1">Formulaire HTML</h1>
+
+        <!-- 
+        form : declaration du formulaire
+        method : comment vont circuler les donnes saisies GET ou POST
+        enctype : encode des donnes
+        action : destination des donnes URL si differentes
+        input : champ de saisie du formulaire avec differents type text password email file color date etc ...
+        textarea : champs de saisi de grande quantite de texte
+        select : liste deroulante avec choix d options 
+        type checkbox : case à cocher multiple
+        type radio : case à cocher choix unique
+        attribut check : permet de cocher une case par defaut
+        attribut selected : permet de selectionner une option par defaut
+        -->
+
+        <form action="" method="" enctype="" class="form">
+
+            <div class="form-group">
+                <label for="pseudo">Pseudo</label>
+                <input type="text" id="pseudo" name="pseudo" class="form-control" value="Mario" disabled>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" name="password" id="password" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="firstName">Prénom</label>
+                <input type="text" name="firstName" id="firstName" class="form-control" placeholder="Saisir votre prénom">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Saisir votre adresse email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="avatar">Avatar</label>
+                <input type="file" name="avatar" id="avatar" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <select name="pays" id="pays" class="form-control">
+                    <option value="france" selected>France</option>
+                    <option value="italie">Italie</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="espagne">Espagne</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="langage">Quels sont vos langages de programmation préférés ?</label>
+
+                <div class="form-checkbox">
+                    <p class="checkbox-content">
+                        <input type="checkbox" name="langage" id="" value="html-css" checked>
+                        <span class="checkbox-label">HTML-CSS</span>
+                    </p>
+
+                    <p class="checkbox-content">
+                        <input type="checkbox" name="langage" id="" value="java">
+                        <span class="checkbox-label">JAVA</span>
+                    </p>
+
+                    <p class="checkbox-content">
+                        <input type="checkbox" name="langage" id="" value="php">
+                        <span class="checkbox-label">PHP</span>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="langage">Quel est votre plat préféré ?</label>
+                
+                <div class="form-radio">
+                    <p class="radio-content">
+                        <input type="radio" name="food" id="tartiflette" value="tartiflette" checked>
+                        <span class="radio-label">Tartiflette</span>
+                    </p>
+
+                    <p class="radio-content">
+                        <input type="radio" name="food" id="fondue" value="fondue">
+                        <span class="radio-label">Fondue</span>
+                    </p>
+
+                    <p class="radio-content">
+                        <input type="radio" name="food" id="raclette" value="raclette">
+                        <span class="radio-label">Raclette</span>
+                    </p>
+                </div>
+
+            </div>    
+
+            <div class="form-group">
+                <label for="codePostal">Code Postal</label>
+                <input type="text" name="codePostal" id="codePostal" class="form-control" placeholder="Saisir voter Code Postal" maxlength="5" pattern="[0-9]{5}" title="5 chiffres entre 0 et 9">
+            </div>
+
+            <div class="form-group">
+                <label for="adresse">Adresse</label>
+                <textarea name="adresse" id="textarea" class="form-control" cols="" rows="5"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="birthday">Date de naissance</label>
+                <input type="date"  name="birthday" id="birthday" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="color">Choisir une couleur</label>
+                <input type="color"  name="color" id="color" class="form-control">
+            </div> 
+
+            <button type="submit" class="btn__submit">VALIDER</button>
+
+            <button type="reset" class="btn__reset">EFFACER</button>
+
+            
+
+
+        </form>
+
+
+    </div>
+
+</body>
+</html>

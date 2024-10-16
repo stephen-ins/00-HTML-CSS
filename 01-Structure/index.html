@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Commentaire en HTML --> 
+    <!-- Les balises <meta> correspondent aux meta données de la page html -->
+    <!-- encodage -->
+    <meta charset="UTF-8">
+
+    <!-- niveau de zoom pour le responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Description du site google s'en sert -->
+    <meta name="description" content="Ce site est dédié à des cours de programmation HTML / CSS à l'AFPA de Chartes">
+    <meta name="author" content="Grégory LACROIX">
+
+    <!-- Lien avec la feuille de style CSS pour le design -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- titre qui apparait dans l'onglet du navigateur -->
+    <title>HTML-CSS / 01-Structure</title>
+</head>
+<body>
+    <!-- <body> : corps du document -->
+    
+    <header>
+        <!-- L'élément HTML <header> représente du contenu introductif ou du contenu aidant à la navigation. il peut contenir des éléments comme un titre, un slogan, un logo, un menu de navigation, un formulaire de recherche etc... Cette balise peut être intégrée une seule fois -->
+    </header>
+    <nav>
+        <!-- Zone du menu permettant de naviguer sur le site, il peut y avoir plusieurs menus de navigation, header et footer par exemples -->
+        
+        <!-- Liens : l'attribut href permet de renseigner l'URL de destination -->
+        <a href="../index.html">Home</a>
+        <a href="">A propos</a>
+        <a href="">Contact</a>
+    </nav>
+    <main>
+        <!-- L'élément <main> représente le contenu majoritaire du <body> du corp du document, par exemple un groupe de contenu thématique -->
+        
+        <!-- Titre principal de la page, obligatoire sur chaque page, un seul h1 -->
+        <h1>Titre principal</h1>
+
+        <!-- Sous-titre de h2 à h6 -->
+        <h2>Sous-titre</h2>
+
+        <section>
+            <!-- L'élément html <section> repésente un section générique du document, par un exemple un groupe de contenu thématique, par exemple les produits de la catégorie smartphone d'un site ecommerce -->
+
+            <div>
+                <!-- l'élément html <div> (qui signifie division du document) est un conteneur générique qui permet d'organiser le contenu. Il peut utiliser pour regrouper des éléments html -->
+            </div> 
+            <span> 
+                <!-- Zone secondaire de contenu, qui permet par exemple de colorer une partie de texte -->
+            </span>
+            <figure>
+                <!-- Représente un contenu autonome, par exmple une image et une légende -->
+                <figcaption>
+                    <!-- Légende de <figure> -->
+                </figcaption>
+            </figure>
+            <p>
+                <!-- Paragraphe, contenu de texte -->
+            </p>
+        </section>    
+    </main>
+    <footer>
+        <!-- Pied de page, ex: liens administratifs, mentions légales, CGV, copyright etc... -->
+    </footer> 
+</body>
+</html>
+
+<!-- 
+    Il exsite 2 types de balises en HTML : 
+    - Les balises inline, la largeur s'adapte par rapport au contenu (a, span, img etc...)
+    - Les balises type block, la largeur prend automatiquement tout la largeur de la page ou de l'élément dans lequel il est imbriqué (header, nav, div, section etc...)
+-->

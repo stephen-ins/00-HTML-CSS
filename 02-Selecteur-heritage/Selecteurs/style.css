@@ -1,0 +1,52 @@
+/* On selectionne l'ensemble des balises <p> du document html */
+p{
+    color: red;
+}
+
+/* Sélectionne le premier élément de la page générale ou de son élément parent */
+p:first-child{
+    color: blue;
+}
+
+/* Sélectionne le premier élément de la page générale ou de son élément parent */
+p:last-child{
+    color: aquamarine;
+}
+
+/* Element pair */
+p:nth-child(even){
+    color: cadetblue;
+}
+
+/* Elément précis, n°5 et 6, il est possible d'appeler plusieurs éléments en même temps */
+p:nth-child(5), p:nth-child(6){
+    color:rgba(117, 0, 82, 0.555)
+}
+
+/* Appel d'un élément HTML possédant la classe .zoneA */
+.zoneA{
+    color: chartreuse;
+}
+
+/* il est possible d'affecter plusieurs classe à un élément HTML */
+.background_color{
+    background: black;
+}
+
+/* Apple d'un élément HTML possédant l'id UNIQUE #zoneC */
+#zoneC{
+    color: blueviolet;
+}
+
+/* Sélectionne l'élément span qui est déclaré à l'intérieur de l'élément possédant l'id #zoneD */
+#zoneD span{
+    color: red;
+}
+
+/*
+L'utilisation des childs n'est pas très rassurant dans le cas pour le code HTML serait amené à évoluer. Il est préférable de favoriser les .classes
+*/
+
+
+
+

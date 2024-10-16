@@ -1,0 +1,79 @@
+@import url(../02-Selecteur-heritage/Heritage/reset.css);
+
+html, body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.zoneA{
+    width: 500px;
+    border: 2px solid black;
+    height: 50px;
+    margin: 0 auto 20px auto;
+}
+
+.zoneB{
+    width: 50% ;
+    height: 100%;
+    background: red;
+}
+    /* 
+        Unité de mesure absolu :
+        - px : 1px représente 1px à l'écran, c'est une unité fixe quelque soit la taille de l'écran
+        
+        Unité de mesure relative : 
+        - % une taille de font en pourcentage fait référence à son élément parent (ex : h1 font size de 200% correspond à 32px)
+
+        - em : unité de mesure par défaut de google. Unité de mesure relative par rapport à son élément parent.
+        Inconvénient : si l'on défini une font size à 2em sur les li , on s'aperçoit que les li enfant sont deux fois plus grand puisque l'unité se défnit sur son élément parent.
+
+        -rem : font size par rapport à l'élément racine ! body ! Unité de mesure parfaite pour l'adaptatif, si nous modifions les font size, le site s'adapte automatiquement proportionnelement.
+
+        - vw (viewport width): par rapport à la largeur de la fenêtre.
+
+        - vh (viewport height) : par rapport à la hauteur de la fenêtre.
+
+    */
+
+/* .title_h1{
+    text-align: center;
+    font-size: 200%;
+} */
+
+.title_h1{
+    text-align: center;
+    font-size: 200%;
+}
+
+.title_h2{
+    text-align: center;
+    font-size: 1.75em;
+    margin-bottom: 24px;
+}
+
+.title_h3{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 24px;
+}
+
+.title_h4{
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: 24px;
+}
+
+.title_h1, .title_h2, .title_h3, .title_h4{
+    margin-bottom: 1rem;
+}
+
+.list{
+    margin-left: 20px;
+}
+
+.list_item{
+    list-style-type: disc;
+    font-size: 2rem;
+}
+

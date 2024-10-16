@@ -1,0 +1,67 @@
+@import url(../02-Selecteur-heritage/Heritage/reset.css);
+
+html, body{
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav{
+    background-color: #b87474;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+
+
+}
+
+.nav__link:hover{
+    background-color: lightblue;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.title__h1{
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.container{
+    width: 1440px;
+    align-items: center;
+    row-gap: 50px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.button__link{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: lightpink;
+    color: blue;
+}
+
+.logo{
+    height: 150px;
+
+}
+
+#title__culture, #title__sport, #title__politique{
+    font-size: 1.5rem;
+}
+
+
+

@@ -1,0 +1,43 @@
+@import url(../02-Selecteur-heritage/Heritage/reset.css);
+
+body {
+  font-size: 16px;
+  background: black url(assets/background.webp) no-repeat;
+  background-size: cover;
+}
+
+.content {
+  width: 500px;
+  min-height: 500px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  /*
+    50px haut/bas | automatique à gauche et droite, ça permet de centrer automatiquement horizontalement l'élément bloc.
+    */
+  margin: 50px auto;
+  -webkit-box-shadow: 7px 7px 21px 27px rgba(9, 10, 26, 0.75);
+  box-shadow: 7px 7px 21px 27px rgba(9, 10, 26, 0.75);
+}
+
+.picture {
+  height: 250px;
+  border-radius: 1rem;
+  -webkit-box-shadow: 7px 7px 21px 27px rgba(9, 10, 26, 0.75);
+  box-shadow: 7px 7px 21px 27px rgba(9, 10, 26, 0.75);
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+/*
+:hover se déclenche au survol de la souris sur l'élément html
+*/
+
+.picture:hover {
+  transform: rotate(5deg);
+}
+
+.paragraph {
+  text-align: center;
+  margin-bottom: 2rem;
+}

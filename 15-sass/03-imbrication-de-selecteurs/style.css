@@ -1,0 +1,12 @@
+.list {
+  list-style: none;
+}
+.list:hover {
+  background-color: lightblue;
+}
+.list .list__item {
+  color: red;
+}
+.list .list__item:hover {
+  background-color: lightcoral;
+}/*# sourceMappingURL=style.css.map */

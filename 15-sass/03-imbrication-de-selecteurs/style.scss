@@ -1,0 +1,16 @@
+.list {
+  // & fait reference au selecteur exterieur, le selecteur parent list
+  &:hover {
+    background-color: lightblue;
+  }
+  list-style: none;
+  .list__item {
+    color: red;
+    // & fait reference au selecteur exterieur, le selecteur parent list__item
+    &:hover {
+      background-color: lightcoral;
+    }
+  }
+}
+
+// Sass propose un moyen d'imbriquer les elements, cela permet une meilleur organisation et lisibilité du code CSS dans son ensemble. Le selecteur spécial inventé par Sass qui est utilisé dans les selecteurs imbriqué pour faire reference au selecteur exterieur.

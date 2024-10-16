@@ -1,0 +1,56 @@
+%block {
+  width: 300px;
+  height: 300px;
+  margin: 4rem;
+  transition: 1s all;
+}
+
+@mixin transform($property) {
+  transform: $property;
+}
+
+// display (grid, repeat(3, 1fr), 2rem);
+@mixin display($display, $column, $gap) {
+  display: $display;
+  grid-template-columns: $column;
+  gap: $gap;
+}
+
+.rotate45 {
+  @extend %block;
+  background-color: lightblue;
+  &:hover {
+    @include transform(rotate(45deg));
+  }
+}
+.rotate180 {
+  @extend %block;
+  background-color: lightcoral;
+  &:hover {
+    @include transform(rotate(180deg));
+  }
+}
+.container {
+  @include display(grid, repeat (3, 1fr), 2rem);
+}
+
+.item1 {
+  height: 200px;
+  background: lightblue;
+}
+.item2 {
+  height: 200px;
+  background: lightcoral;
+}
+.item3 {
+  height: 200px;
+  background: lightgreen;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    @include display(grid, repeat(2, 1fr), 1 rem);
+  }
+}
+
+// les mixins nous permettent de creer des groupes de declarations CSS en vue de les réutiliser plus tard dans notre code. On va creer un mixant avec la regle @mixin. Il va falloir donner un nm à chacun de vos mixins pour pouvoir s'en servir plus tard. Ensuite on va inclure nos mixins dans n'importe quelle declaration CSS grace à la regle @include.

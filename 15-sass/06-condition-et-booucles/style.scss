@@ -1,0 +1,55 @@
+$light: #eee;
+$dark: #333;
+$width: 1000;
+$margin: 0;
+
+$animals: lion, ours, chameau;
+
+// 1er tour lion
+// 2eme tour ours
+// 3eme tour chameau
+@each $animal in $animals {
+  // 1er .block__lion
+  // 2eme .block__ours
+  // 3eme .block__chameau
+  .block__#{$animal} {
+    width: 300px;
+    height: 300px;
+    // background: url(images/lion.jpg) no-repeat
+    // background: url(images/ours.jpg) no-repeat
+    // background: url(images/chameau.jpg) not-repeat
+    background: url(images/#{$animal}.jpg) no-repeat;
+  }
+}
+
+// la boucle @each permet de passer en revue le contenu de la variable $animals (qui contient les 3 valeurs lion, chameau et ours) $animal est une variable de reception qui contient pour chaque tour de boucle une valeur d'un animal. #{$animal} : interpolation de la variable $animal qui permet de sortir et d'afficher la valeur contenu dans animal. Pour chaque tour de boucle on genere les proprietes CSS, dont l'URL du background pour chaque block.
+
+// les boucles permettent de repeter une action en fonction d'une condition. @while, nous exprimons une condition. Tant  que la valeur de la variable $margin est strictement inferieur à 20 ($width/50), tant que cette condition retourne TRUE, qu'elle est vrai, la boucle continue de tourner, entre les accolades, ce sont les instructions donnees à la bloucle, ici on incrémente (on ajoute +1) à la variable $margin pour chaque tour de boucle.
+
+// 0    1000/50=20
+// 20       20
+@while ($margin<$width/50) {
+  //    19=19+1=20
+  $margin: $margin + 1;
+}
+
+// $light-theme : false
+@mixin theme($light-theme: true) {
+  @if ($light-theme) {
+    color: $dark;
+    background-color: $light;
+  } @else {
+    color: $light;
+    background-color: $dark;
+  }
+}
+
+
+// Nous declarons la condition IF à l'interieur des parentheses, si la condition est VRAI, qu'elle retourne TRUE, c'est le code entre les accolades qui sera executé. Si la conditon IF retourne FALSE, qu'elle n'est pas verifiée, nous entrons automatiquement dans le cas par défaut @else (qui n'est pas obligatoire).
+body {
+  @include theme($light-theme: true);
+  span {
+    @include theme($light-theme: false);
+  }
+  margin: $margin + px;
+}

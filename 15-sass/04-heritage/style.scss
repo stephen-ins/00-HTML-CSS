@@ -1,0 +1,19 @@
+%text__box {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 5px solid #dddd;
+  box-sizing: border-box;
+}
+
+.info {
+  @extend %text__box;
+  background-color: lightblue;
+}
+
+.warning {
+  @extend %text__box;
+  background-color: lightcoral;
+}
+
+// l'heritage permet d'organiser son code differement en groupant les regles plutot que les selecteurs puis utiliser @extent pour partager cet ensemble de proprietes avec d'autres selecteurs. Le selecteur placeholder permet de creer un ensemble de regle qui n'apparaitront pas dans la sortie CSS (dans le rendu final) que si il est etendu avec @extend.

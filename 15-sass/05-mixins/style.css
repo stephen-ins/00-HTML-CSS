@@ -1,0 +1,49 @@
+.rotate180, .rotate45 {
+  width: 300px;
+  height: 300px;
+  margin: 4rem;
+  transition: 1s all;
+}
+
+.rotate45 {
+  background-color: lightblue;
+}
+.rotate45:hover {
+  transform: rotate(45deg);
+}
+
+.rotate180 {
+  background-color: lightcoral;
+}
+.rotate180:hover {
+  transform: rotate(180deg);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat 3, 1fr;
+  gap: 2rem;
+}
+
+.item1 {
+  height: 200px;
+  background: lightblue;
+}
+
+.item2 {
+  height: 200px;
+  background: lightcoral;
+}
+
+.item3 {
+  height: 200px;
+  background: lightgreen;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1 rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,201 @@
+@import url(../../02-Selecteur-heritage/Heritage/reset.css);
+
+
+
+html, body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.container{
+    width: 1400px;
+    margin: 50px auto;
+}
+
+.section1{
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.section2{
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: flex-end;
+}
+
+.section3{
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.section4{
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    /*les éléments sont répartis uniformément dans la section*/
+}
+
+.section5{
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    /* les éléments répatis en espace égale autour d'eux */
+}
+
+.section6{
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    /*même espace entre chaque élément*/
+}
+
+.title__h1{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.title__h2{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.item{
+    background: aqua;
+    height: 60px;
+    padding: 10px;
+    margin-right: 1rem;
+}
+
+/*hauteur des items par défaut les éléments prennent 100% de la hauteur*/
+
+.section7{
+    height: 150px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.section8{
+    height: 150px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section9{
+    height: 150px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.section10{
+    min-height: 150px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+
+    /*retour à la ligne auto si espace horizontal insuffisant*/
+    flex-wrap: wrap;
+
+    /*10px entre chaque éléments | 20px entre chaque column*/
+    gap: 10px 20px;
+
+    /*espace entre chaque ligne d'éléments*/
+    row-gap: 40px;
+
+    /*espace entre chaque colonne*/
+    column-gap: 100px;
+}
+
+.section11{
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    column-gap: 10px;
+}
+
+.itemGrow{
+    background: aqua;
+    height: 60px;
+    padding: 10px;
+}
+
+/*Flex Grow définit la largeur de chaque element par rapport à la largeur de l'element parent*/
+
+.item4{
+    order: 3;
+    /*definit la position l'ordre des elements utile en RWD responsive web design pour ordonner differement les elements selon les differents support tablettes smartphone etc...*/
+    flex-grow: 1;
+}
+
+.item5{flex-grow: 2;}
+
+.item6{flex-grow: 1;}
+
+
+.item7 .item8 .item9{
+    width: 50px;
+    height: 50px;
+}
+
+
+.section12{
+    height: 300px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    /*avec Flex Direction column les proprietes H et V sont inverses
+    justify content vertical align items horizontal*/
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section13{
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    column-gap: 10px;
+    flex-direction: row-reverse;
+}
+
+
+.item3{margin-right: 0;}
+
+
+
+

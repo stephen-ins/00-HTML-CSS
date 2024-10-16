@@ -1,0 +1,27 @@
+.block__lion {
+  width: 300px;
+  height: 300px;
+  background: url(images/lion.jpg) no-repeat;
+}
+
+.block__ours {
+  width: 300px;
+  height: 300px;
+  background: url(images/ours.jpg) no-repeat;
+}
+
+.block__chameau {
+  width: 300px;
+  height: 300px;
+  background: url(images/chameau.jpg) no-repeat;
+}
+
+body {
+  color: #333;
+  background-color: #eee;
+  margin: 20px;
+}
+body span {
+  color: #eee;
+  background-color: #333;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+.warning, .info {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 5px solid rgba(221, 221, 221, 0.8666666667);
+  box-sizing: border-box;
+}
+
+.info {
+  background-color: lightblue;
+}
+
+.warning {
+  background-color: lightcoral;
+}/*# sourceMappingURL=style.css.map */

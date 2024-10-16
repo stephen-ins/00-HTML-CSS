@@ -1,0 +1,182 @@
+@import url(../../../02-Selecteur-heritage/Heritage/reset.css);
+
+html, body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{
+    font-size: 4rem;
+    text-align: center;
+    margin: 40px 20px;
+    padding: 10px 20px;
+}
+
+.container{
+    margin: 20px 50px;
+    padding: 20px 10px;
+    color: rgb(177, 168, 160);
+    font-size: 1.5rem;
+}
+
+.haut{
+    background-color: blueviolet;
+    height: 80px;
+    
+    
+}
+
+.M{
+    background-color: yellow;
+    height: 30px;
+}
+
+.contenu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.a{
+    background-color: red;
+    width: 20%;
+    height: 200px;
+}
+.b{
+    background-color: rgb(0, 255, 0);
+    width: 20%;
+    height: 200px;
+
+}
+.c{
+    background-color: red;
+    width: 20%;
+    height: 200px;
+
+}
+.d{
+    background-color: rgb(204, 0, 255);
+    width: 20%;
+    height: 200px;
+
+}
+.e{
+    background-color: rgb(255, 230, 0);
+    width: 20%;
+    height: 200px;
+
+}
+
+.f{
+    background-color: rgb(0, 0, 0);
+    width: 20%;
+    height: 200px;
+
+}
+
+.g{
+    background-color: rgb(53, 53, 53);
+    width: 20%;
+    height: 200px;
+
+}
+
+.h{
+    background-color: rgb(110, 110, 110);
+    width: 20%;
+    height: 200px;
+
+}
+
+.i{
+    background-color: rgb(255, 0, 0);
+    width: 20%;
+    height: 200px;
+
+}
+
+
+.j{
+    background-color: rgb(88, 88, 88);
+    width: 20%;
+    height: 200px;
+
+}
+
+.k{
+    background-color: rgb(116, 116, 116);
+    width: 20%;
+    height: 200px;
+
+}
+
+.l{
+    background-color: rgb(165, 165, 165);
+    width: 20%;
+    height: 200px;
+
+}
+.m{
+    background-color: rgb(255, 0, 0);
+    width: 20%;
+    height: 200px;
+
+}
+
+.n{
+    background-color: rgb(38, 0, 255);
+    width: 20%;
+    height: 200px;
+
+}
+
+.o{
+    background-color: rgb(104, 206, 45);
+    width: 20%;
+    height: 200px;
+
+}
+
+.p{
+    background-color: rgb(0, 255, 128);
+    width: 20%;
+    height: 200px;
+
+}
+
+.q{
+    background-color: rgb(53, 177, 140);
+    width: 20%;
+    height: 200px;
+
+}
+
+.r{
+    background-color: rgb(183, 0, 255);
+    width: 20%;
+    height: 200px;
+
+}
+
+.s{
+    background-color: rgb(214, 205, 121);
+    width: 20%;
+    height: 200px;
+
+}
+
+.t{
+    background-color: rgb(0, 255, 106);
+    width: 20%;
+    height: 200px;
+
+}
+
+
+.bas{
+    background-color: rgb(247, 0, 255);
+    height: 50px;
+}
+
+
+

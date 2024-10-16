@@ -1,0 +1,61 @@
+@import url(../../../02-Selecteur-heritage/Selecteurs/../Heritage/reset.css);
+
+
+
+
+html, body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+
+
+.container{
+    padding: 100px 100px;
+}
+
+.titre{
+    text-align: center;
+    margin: 10px 40px 40px;
+    margin-top: 100px;
+}
+
+
+
+.zh{
+    background: red;
+    text-align: left;
+    height: 200px;
+}
+
+
+
+
+.zg{
+    background: rgb(0, 81, 255);
+    text-align: left;
+    height: 800px;
+    /* display: flex; */
+    width: 15%;
+}
+
+
+
+.zm{
+    background: rgb(81, 255, 0);
+    text-align: left;
+    height: 800px;
+    /* display: flex; */
+    width: 85%;
+}
+
+
+.main{
+    display: flex;
+    /* justify-content: center; */
+
+
+
+
+
+}

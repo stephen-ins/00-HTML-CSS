@@ -1,0 +1,45 @@
+@import url(reset.css);
+
+/* Par défaut, les navigateurs imposent des propriétés CSS aux éléments 
+déclarés dans le fichier HTML, le fichier reset.css contient des propirétés 
+permettant l'héritage CSS, on importe le fichier grace à @import.
+Ce fichier doit être importé au tout début du fichier CSS */
+
+.title_h1{
+    color: blue;
+    background-color: rgb(13, 201, 107);
+    /* Alignement horizontal du text */
+    text-align: center;
+    /* Largeur de l'élément */
+    width: 300px;
+    /* Marges extérieur de l'élément */
+    /* Margin: Haut/Droite/Bas/Gauche */
+    margin: 20px 16px 32px 64px;
+}
+
+
+.paragraphe{
+    color: rgb(6, 9, 27);
+    background-color: rgb(182, 10, 10);
+}
+
+.span{
+    color: brown;
+    background-color: black;
+    /* marge intérieur de l'élément */
+    /*
+        24px haut/bas
+        36px gauche/droite
+    */
+    padding: 24px 26px;
+    display: inline-block;
+}
+
+.block{
+    color: aqua;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+

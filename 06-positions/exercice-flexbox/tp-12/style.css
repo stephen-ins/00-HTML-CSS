@@ -1,0 +1,58 @@
+@import url(../../../02-Selecteur-heritage/Heritage/reset.css);
+
+
+
+html, body{
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.container{
+    margin: 50px 50px;
+}
+
+.tp12{
+    font-size: 2rem;
+    text-align: center;
+    padding: 25px 25px;
+    background: rgb(255, 255, 255);
+}
+
+.H{
+    background: purple;
+    color: antiquewhite;
+    height: 50px;
+
+}
+
+.M{
+    background: rgb(207, 221, 9);
+    color: antiquewhite;
+    height: 30px;
+
+
+}
+
+.main{
+    background-color: rgb(46, 216, 159);
+    height: 500px;
+}
+
+.A{
+    background: rgb(180, 14, 14);
+    font-size: 2rem;
+    color: rgb(95, 94, 94);
+    height: 160px;
+    width: 160px;
+
+}
+
+
+
+.B{
+    background: rgb(199, 12, 206);
+    color: antiquewhite;
+    margin-top: 0px;
+    height: 40px;
+
+}
