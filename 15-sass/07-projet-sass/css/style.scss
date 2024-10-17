@@ -23,14 +23,7 @@ $font-size-xl: 2rem;
 
 // operateur definition == permet de tester l'egalité sur les valeurs, != permet de tester la difference des valeurs, < permet de tester si une valeur est strictement inferieur à une autre, > permet de tester si une valeur est strictement superieur à une autre, <= permet de tester si une valeur est strictement inferieur ou egale à une autre, >= permet de tester si une valeur est strictement superieure ou egale à une autre.
 
-@mixin display(
-  $display,
-  $column,
-  $direction,
-  $justifycontent,
-  $alignitems,
-  $gap
-) {
+@mixin display($display, $column, $direction, $justifycontent, $alignitems, $gap) {
   @if ($display == grid) {
     display: $display;
     grid-template-columns: $column;
@@ -193,23 +186,26 @@ body {
 
 @media screen and (max-width: 768px) {
   .container {
-    flex-direction: column;
     width: 100%;
     font-size: $font-size-sm;
+  }
+  .actuality {
+    @include display(grid, repeat(2, 1fr), false, false, false, $spacing-md);
   }
   .header {
     height: auto;
   }
-  // .header__logo {
-  //   width: 40px;
-  //   height: 40px;
-  // }
+
   .title__h1 {
     text-align: end;
   }
   .title__h1,
   .title__h2 {
     font-size: $font-size-md;
+  }
+  .femme{
+    align-items: center;
+    align-content: center;
   }
 
   .footer {
@@ -226,14 +222,20 @@ body {
 
     .footer__informations {
       width: 100%;
+      padding: auto, 0;
+
       @include display(flex, false, row, space-around, center, false);
     }
     .footer__reseaux {
       width: 100%;
+      padding: auto, 0;
+
       @include display(flex, false, row, space-around, center, false);
     }
     .footer__link {
       width: 100%;
+      padding: auto, 0;
+
       text-align: end;
       @include display(flex, false, column, space-around, center, false);
     }

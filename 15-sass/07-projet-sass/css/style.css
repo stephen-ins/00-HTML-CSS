@@ -165,9 +165,13 @@ body {
 }
 @media screen and (max-width: 768px) {
   .container {
-    flex-direction: column;
     width: 100%;
     font-size: 0.75rem;
+  }
+  .actuality {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
   .header {
     height: auto;
@@ -178,6 +182,10 @@ body {
   .title__h1,
   .title__h2 {
     font-size: 1rem;
+  }
+  .femme {
+    align-items: center;
+    align-content: center;
   }
   .footer {
     width: 100%;
@@ -193,6 +201,7 @@ body {
   }
   .footer .footer__informations {
     width: 100%;
+    padding: auto, 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -200,6 +209,7 @@ body {
   }
   .footer .footer__reseaux {
     width: 100%;
+    padding: auto, 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -207,6 +217,7 @@ body {
   }
   .footer .footer__link {
     width: 100%;
+    padding: auto, 0;
     text-align: end;
     display: flex;
     flex-direction: column;
